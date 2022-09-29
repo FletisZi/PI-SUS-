@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #121214;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+
+main{
+    color: #FFF;
+}
+
+.container{
+    background-color: #202024;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 60%;
+    color: white;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
