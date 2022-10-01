@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/pefil.css">
     <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/novaConsulta.css">
     <title>HOME</title>
     
 </head>
@@ -38,14 +39,45 @@
         <section id="novaConsulta">
             <div class="container">
                 <img src="../../public/image/user.png" alt=""><br>
-                <div class="box">
-                    <label  class="labelUser">Nova Consulta</label><br>
+                <div class="box -secund">
+                    <div class="container-questions">
+                        <label  class="labelUser">Quais sua temperatura corporal</label><br>
+                        <input type="text" id="input-temperatura">
+                    </div>
+
+
+                    <div class="container-questions">
+                        <label class="labelUser">Está ou esteve com dor de cabeça :  </label>
+                        <div class="container-options">
+                            <label class="labelRadio" for="dorCabecaSim">Sim</label>
+                            <input type="radio" name="cabeca" id="dorCabecaSim" value="sim">
+                            
+                            <label class="labelRadio" for="dorCabecaNao">Não</label>
+                            <input type="radio" name="cabeca" id="dorCabecaNao" value="não">            
+                        </div>
+                    </div>
+
+                    <div class="container-questions">
+                        <label class="labelUser">Está ou esteve com mal-estar :  </label>
+                        <div class="container-options">
+                            <label class="labelRadio" for="malEstarSim">Sim</label>
+                            <input type="radio" name="malEstar" id="malEstarSim" value="sim">
+                            
+                            <label class="labelRadio" for="malEstarNao">Não</label>
+                            <input type="radio" name="malEstar" id="malEstarNao" value="não">
+                        </div>
+                    </div>
+
+                    
+                    <button>Consultar</button>
+                
+                  
                 </div>
             </div>
         </section>
 
 
-        <!--******************Nova CONSULTA******************-->
+        <!--******************Perfil******************-->
 
 
         <section id="perfil">

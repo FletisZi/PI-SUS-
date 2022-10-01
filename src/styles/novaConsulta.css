@@ -1,0 +1,21 @@
+.container-questions{
+    padding: 2rem 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box.-secund{
+    width:80%;
+}
+.container-options{
+    width: 20%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.labelUser{
+    flex:1;
+}
+.labelRadio{
+    font-size: 1.25rem;
+}
