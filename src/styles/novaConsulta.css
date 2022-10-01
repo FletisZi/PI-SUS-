@@ -17,5 +17,22 @@
     flex:1;
 }
 .labelRadio{
+    
     font-size: 1.25rem;
+}
+
+#btn-NewConsulta{
+    font-family: 'DM Sans',sans-serif;
+    display: block;
+    font-size: 1.4rem;
+    background-color: #8257e5;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    color: #FFF;
+    transition: linear 0.2s;
+}
+#btn-NewConsulta:hover{
+    background-color: #8e63f3;
 }

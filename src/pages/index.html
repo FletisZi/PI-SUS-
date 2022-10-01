@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/pefil.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/novaConsulta.css">
+    <link rel="stylesheet" href="../styles/historico.css">
     <title>HOME</title>
     
 </head>
@@ -27,8 +28,24 @@
         <section id="historico">
             <div class="container">
                 <img src="../../public/image/user.png" alt=""><br>
-                <div class="box">
+                <div class="box -secund">
                     <label class="labelUser">Histórico</label><br>
+                    <table>
+                        <tr>
+                            <td>Data</td>
+                            <td>Dr. Plantão</td>
+                            <td>Classidicção de risco</td>
+                            <td>Exame 1</td>
+                            <td>Exame 1</td>
+                            <td>Observações</td>
+                            <td>Risco fisico</td>                    
+                            
+                        </tr>
+                        <tr>
+
+                        </tr>
+                        
+                    </table>
                     
                 </div>
             </div>
@@ -40,10 +57,7 @@
             <div class="container">
                 <img src="../../public/image/user.png" alt=""><br>
                 <div class="box -secund">
-                    <div class="container-questions">
-                        <label  class="labelUser">Quais sua temperatura corporal</label><br>
-                        <input type="text" id="input-temperatura">
-                    </div>
+                    
 
 
                     <div class="container-questions">
@@ -68,8 +82,30 @@
                         </div>
                     </div>
 
+                    <div class="container-questions">
+                        <label class="labelUser">Está ou esteve com sintomas gripais ultimas 36h :  </label>
+                        <div class="container-options">
+                            <label class="labelRadio" for="sintomaGripaisSim">Sim</label>
+                            <input type="radio" name="sintomaGripais" id="sintomaGripaisSim" value="sim">
+                            
+                            <label class="labelRadio" for="sintomaGripaisNao">Não</label>
+                            <input type="radio" name="sintomaGripais" id="sintomaGripaisNao" value="não">
+                        </div>
+                    </div>
+
+                    <div class="container-questions">
+                        <label  class="labelUser">Qual sua temperatura corporal</label><br>
+                        <input type="text" id="input-temperatura">
+                    </div>
+
+                    <div class="container-questions">
+                        <label class="labelUser">Descreva com riqueza de informações quais são seus sintomas e oque você sente?</label>
+                        <input type="text" id="input-DescriptionSintomas">
+                       
+                    </div>
+
                     
-                    <button>Consultar</button>
+                    <button id="btn-NewConsulta">Consultar</button>
                 
                   
                 </div>
@@ -93,6 +129,29 @@
                     <label id="dataNascimento" class="labelUser">Data Nascimento</label><br>                
                     <label id="endereco" class="labelUser">Endereço</label><br>
                 </div>
+            </div>
+
+
+            <div class="form-edit">
+                <h2>Dados Pessoais</h2>
+                <label id="nome" class="labelUser">Usuario ADM</label><br>
+                <label id="cpf" class="labelUser">CPF</label><br>
+                <label id="sus" class="labelUser">Cartão SUS</label><br>
+                <label id="telefone" class="labelUser">Telefone</label><br>
+                <label id="dataNascimento" class="labelUser">Data Nascimento</label><br>                
+                <label id="endereco" class="labelUser">Endereço</label><br>
+                
+                <h2>Dados adicionais</h2>
+                
+                alergia
+                doença comorbidade
+                pressao alta
+                possui deficiencia 
+                fumante
+                diabético
+
+
+
             </div>
         </section>
 
