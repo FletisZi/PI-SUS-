@@ -6,6 +6,7 @@
 }
 .box.-secund{
     width:80%;
+    
 }
 .container-options{
     width: 20%;
@@ -21,6 +22,11 @@
     font-size: 1.25rem;
 }
 
+.input-text{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
 #btn-NewConsulta{
     font-family: 'DM Sans',sans-serif;
     display: block;

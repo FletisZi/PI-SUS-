@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/pefil.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/novaConsulta.css">
     <link rel="stylesheet" href="../styles/historico.css">
+    <link rel="stylesheet" href="../styles/form-edit.css">
+    <link rel="shortcut icon" href="../../public/image/pharmacy.png" type="image/x-icon">
     <title>HOME</title>
     
 </head>
@@ -27,16 +30,15 @@
 
         <section id="historico">
             <div class="container">
-                <img src="../../public/image/user.png" alt=""><br>
                 <div class="box -secund">
-                    <label class="labelUser">Histórico</label><br>
+                    <h2>Histórico de Consultas</h2><br>
                     <table>
                         <tr>
                             <td>Data</td>
                             <td>Dr. Plantão</td>
-                            <td>Classidicção de risco</td>
+                            <td>Classificação de risco</td>
                             <td>Exame 1</td>
-                            <td>Exame 1</td>
+                            <td>Exame 2</td>
                             <td>Observações</td>
                             <td>Risco fisico</td>                    
                             
@@ -55,7 +57,7 @@
         
         <section id="novaConsulta">
             <div class="container">
-                <img src="../../public/image/user.png" alt=""><br>
+                <h2>FICHA DE TRIAGEM</h2>
                 <div class="box -secund">
                     
 
@@ -95,12 +97,12 @@
 
                     <div class="container-questions">
                         <label  class="labelUser">Qual sua temperatura corporal</label><br>
-                        <input type="text" id="input-temperatura">
+                        <input type="text" id="input-temperatura" class="input-text">
                     </div>
 
                     <div class="container-questions">
                         <label class="labelUser">Descreva com riqueza de informações quais são seus sintomas e oque você sente?</label>
-                        <input type="text" id="input-DescriptionSintomas">
+                        <input type="text" id="input-DescriptionSintomas" class="input-text">
                        
                     </div>
 
@@ -117,8 +119,9 @@
 
 
         <section id="perfil">
+            
             <div class="container">
-                <span id="edit" onclick=""></span>
+                <span class="edit" id="edit1" onclick="openEdit()" style="background-image: url('../../public/image/edit.png'); "></span>
                 <img src="../../public/image/user.png" alt=""><br>
                 
                 <div class="box">
@@ -131,32 +134,75 @@
                 </div>
             </div>
 
-
-            <div class="form-edit">
-                <h2>Dados Pessoais</h2>
-                <label id="nome" class="labelUser">Usuario ADM</label><br>
-                <label id="cpf" class="labelUser">CPF</label><br>
-                <label id="sus" class="labelUser">Cartão SUS</label><br>
-                <label id="telefone" class="labelUser">Telefone</label><br>
-                <label id="dataNascimento" class="labelUser">Data Nascimento</label><br>                
-                <label id="endereco" class="labelUser">Endereço</label><br>
+            <div class="container-edit">
                 
-                <h2>Dados adicionais</h2>
-                
-                alergia
-                doença comorbidade
-                pressao alta
-                possui deficiencia 
-                fumante
-                diabético
+                <div class="form-edit">
 
+                    <span class="close" style="background-image: url('../../public/image/close.png');  " onclick="openEdit()"></span>
 
+                    <div class="box">
 
+                        <h2>Dados Pessoais</h2>
+                        <label id="nome" class="labelUser">Usuario ADM</label><br>
+                        <label id="cpf" class="labelUser">CPF</label><br>
+                        <label id="sus" class="labelUser">Cartão SUS</label><br>
+                        <label id="telefone" class="labelUser">Telefone</label><br>
+                        <label id="dataNascimento" class="labelUser">Data Nascimento</label><br>                
+                        <label id="endereco" class="labelUser">Endereço</label><br>
+                        
+                        <h2>Dados Adicionais</h2>
+                        
+                        <label class="labelUser">Possui alguma alergia: </label>
+                        
+    
+                        <label class="labelUser">Possui alguma doença comorbidade: </label>
+    
+    
+                        <label class="labelUser">Possui pressao alta: </label>
+    
+                        
+                        
+                        <div class="container-questions">
+                            <label class="labelUser">Possui alguma deficiencia : </label>
+                            <input type="text" id="input-Desficiencias" class="input-text">
+                           
+                        </div>
+                        
+                        
+                        <div class="container-questions">
+                            <label class="labelUser">você é fumante : </label>
+                            <div class="container-options">
+                                <label class="labelRadio" for="fumanteSim">Sim</label>
+                                <input type="radio" name="fumante" id="fumanteSim" value="sim">
+                                
+                                <label class="labelRadio" for="fumanteNao">Não</label>
+                                <input type="radio" name="fumante" id="fumanteNao" value="não">
+                            </div>
+                        </div>
+                        
+                        <div class="container-questions">
+                            <label class="labelUser">Você é diabético : </label>
+                            <div class="container-options">
+                                <label class="labelRadio" for="diabeteSim">Sim</label>
+                                <input type="radio" name="diabete" id="diabeteSim" value="sim">
+                                
+                                <label class="labelRadio" for="diabeteNao">Não</label>
+                                <input type="radio" name="diabete" id="diabeteNao" value="não">
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+    
+                </div>
+    
             </div>
         </section>
-
+        
         
     </main>
+
+    
 
     <script src="index.js"></script>
 </body>

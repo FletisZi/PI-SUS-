@@ -29,7 +29,16 @@ function openHistorico(){
     historico.style.display = "block";
 }
 
+function openEdit(){
+    let formEdit = document.querySelector('.container-edit');
+    
+    if(formEdit.style.display != "flex"){
+        formEdit.style.display = "flex"
+    }else{
+        formEdit.style.display = "none"
+    }
 
+}
 
 
 function addValues(){

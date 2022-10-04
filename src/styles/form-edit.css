@@ -1,0 +1,75 @@
+.container-edit{
+    display: none;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+}
+
+.form-edit{
+    width: 80%;
+    max-height: 90%;
+    background-color: #FFF;
+    color: #000;
+    border-radius:  10px;
+    text-align: center;
+    padding-bottom: 25px;
+    overflow: auto;
+    
+}
+
+.form-edit::-webkit-scrollbar{
+    margin-top: 5px;
+    background-color: #f8fffe;
+    border-radius: 5px;
+    
+}
+
+.form-edit::-webkit-scrollbar-thumb{
+    
+    background-color: #26016b;
+    border-radius: 5px;
+}
+
+.edit, .close{
+    display: block;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s all;
+    -ms-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    -o-transition: 0.2s all;
+}
+.form-edit h2{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.edit:hover ,.close:hover{
+    transform: scale(1.2);
+}
+
+.container-edit{
+    animation: anima 0.5s ease-in-out ;
+}
+
+@keyframes anima {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
