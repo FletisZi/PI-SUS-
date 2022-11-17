@@ -12,17 +12,22 @@
     <link rel="stylesheet" href="../styles/novaConsulta.css">
     <link rel="stylesheet" href="../styles/historico.css">
     <link rel="stylesheet" href="../styles/form-edit.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
     <link rel="shortcut icon" href="../../public/image/pharmacy.png" type="image/x-icon">
     <title>HOME</title>
     
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="menu1" >
             <a href="#" onclick="openHistorico()">Histórico</a>
             <a href="#" onclick="openConsulta()">Nova Consulta</a>
             <a href="#" onclick="openPerfil()">Perfil</a>
         </nav>
+
+        <div id="menu2" onclick="openMenuStrip()">
+            <img src="../../public/image/menu.svg" alt="" style="border: none; border-radius: none">
+        </div>
     </header>
     <main>
 
@@ -205,5 +210,6 @@
     
 
     <script src="index.js"></script>
+    <script src="app.js" defer></script>
 </body>
 </html>

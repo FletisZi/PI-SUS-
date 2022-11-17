@@ -1,0 +1,10 @@
+@media(max-width: 760px) {
+   
+   
+    #menu1{
+        display: none;
+    }
+    #menu2{
+        display: initial;
+    }
+}
