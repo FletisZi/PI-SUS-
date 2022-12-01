@@ -1,10 +1,12 @@
-@media(max-width: 760px) {
-   
-   
+@media(max-width : 650px){
+    header{
+        display: flex;
+        justify-content: center;
+    }
     #menu1{
         display: none;
     }
-    #menu2{
+    #menu3{
         display: initial;
     }
 }

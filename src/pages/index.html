@@ -18,17 +18,31 @@
     
 </head>
 <body>
-    <header>
-        <nav id="menu1" >
-            <a href="#" onclick="openHistorico()">Histórico</a>
-            <a href="#" onclick="openConsulta()">Nova Consulta</a>
-            <a href="#" onclick="openPerfil()">Perfil</a>
+    <div id="menu2"> 
+        <img src="../../public/image/close.png" alt="sair" onclick="home()">
+        <article>
+            <a href="#" onclick="openHistorico(),home()" >Histórico</a>
+            <a href="#" onclick="openConsulta(),home()" >Nova Consulta</a>
+            <a href="#" onclick="openPerfil(),home()" >Perfil</a>
+        </article>
+        
+    </div>
+
+
+    <header id="inicio">
+        <nav id="menu1">
+            <a href="#" onclick="openHistorico()" >Histórico</a>
+            <a href="#" onclick="openConsulta()" >Nova Consulta</a>
+            <a href="#" onclick="openPerfil()" >Perfil</a>
         </nav>
 
-        <div id="menu2" onclick="openMenuStrip()">
-            <img src="../../public/image/menu.svg" alt="" style="border: none; border-radius: none">
+        <div id="menu3" onclick="menu()">
+            
         </div>
+        
     </header>
+
+    
     <main>
 
         <!--****************** HISTORICO ******************-->
@@ -48,9 +62,7 @@
                             <td>Risco fisico</td>                    
                             
                         </tr>
-                        <tr>
-
-                        </tr>
+                
                         
                     </table>
                     
@@ -112,7 +124,7 @@
                     </div>
 
                     
-                    <button id="btn-NewConsulta">Consultar</button>
+                    <button id="btn-NewConsulta" onclick="Consultar()">Consultar</button>
                 
                   
                 </div>
@@ -130,14 +142,15 @@
                 <img src="../../public/image/user.png" alt=""><br>
                 
                 <div class="box">
-                    <label id="nome" class="labelUser">Usuario ADM</label><br>
-                    <label id="cpf" class="labelUser">CPF</label><br>
-                    <label id="sus" class="labelUser">Cartão SUS</label><br>
-                    <label id="telefone" class="labelUser">Telefone</label><br>
-                    <label id="dataNascimento" class="labelUser">Data Nascimento</label><br>                
-                    <label id="endereco" class="labelUser">Endereço</label><br>
+                    <label class="labelUser">Nome: </label><label id="nome" class="labelUser">Usuario ADM</label><br>
+                    <label class="labelUser">CPF: <label id="cpf" class="labelUser">CPF</label></label><br>
+                    <label class="labelUser">Sus: <label id="sus" class="labelUser">Cartão SUS</label></label><br>
+                    <label class="labelUser">Telefone: <label id="telefone" class="labelUser">Telefone</label></label><br>
+                    <label class="labelUser">Data Nasc.: <label id="dataNascimento" class="labelUser">Data Nascimento</label></label><br>                
+                    <label class="labelUser">Endereco: <label id="endereco" class="labelUser">Endereço</label></label><br>
                 </div>
-            </div>
+
+                <span class="edit" id="edit1" onclick="Logof()" style="background-image: url('../../public/image/logout.png'); "></span>
 
             <div class="container-edit">
                 
@@ -155,6 +168,7 @@
                         <label id="dataNascimento" class="labelUser">Data Nascimento</label><br>                
                         <label id="endereco" class="labelUser">Endereço</label><br>
                         
+
                         <h2>Dados Adicionais</h2>
                         
                         <label class="labelUser">Possui alguma alergia: </label>
@@ -198,7 +212,7 @@
                         
                     </div>
     
-    
+                    
                 </div>
     
             </div>
